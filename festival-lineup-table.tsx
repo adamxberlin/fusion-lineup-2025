@@ -194,14 +194,7 @@ export default function FestivalLineupTable() {
                 </Button>
               </TableHead>
               <TableHead className="py-2">
-                <Button
-                  variant="ghost"
-                  onClick={() => handleSort('prominence')}
-                  className="h-auto p-0 font-semibold text-red-400 hover:text-red-300 hover:bg-gray-700"
-                >
-                  {headers[2]}
-                  {getSortIcon('prominence')}
-                </Button>
+                <span className="font-semibold text-red-400">{headers[2]}</span>
               </TableHead>
             </TableRow>
           </TableHeader>
